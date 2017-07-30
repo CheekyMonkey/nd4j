@@ -1,7 +1,7 @@
 Please follow following instructions to build nd4j on raspberry PI: 
 
 		1. {In build machine] compile libnd4j as follows:
-			- $git clone https://github.com/dschowta/libnd4j.git
+			- $git clone https://github.com/CheekyMonkey/libnd4j
 			- For cross compilation use this link:http://stackoverflow.com/questions/19162072/installing-raspberry-pi-cross-compiler
 			- make sure to use the 4.9 version of gcc (raspberrypi/tools/arm-bcm2708/arm-rpi-4.9.3-linux-gnueabihf/bin/arm-linux-gnueabihf-g++)
 		3.[In build machine]  build using "$./buildnativeoperations.sh -o linux-armhf"
@@ -10,7 +10,7 @@ Please follow following instructions to build nd4j on raspberry PI:
 				a. $export LIBND4J_HOME=<pathTond4JNI>
 				
 				b. Build and install nd4j to maven locally (using the forked nd4j specifically changed for raspberry pi)
-					$git clone https://github.com/dschowta/nd4j.git
+					$git clone https://github.com/CheekyMonkey/nd4j
 					$cd nd4j
 				c. Edit  nd4j-backends\nd4j-backend-impls\nd4j-native\src\main\resources\org\bytedeco\javacpp\properties to update the paths of native toolchains
 				
